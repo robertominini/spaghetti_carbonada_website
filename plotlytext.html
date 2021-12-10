@@ -1,0 +1,11 @@
+<div class="grid">
+  <div class="col-1-2">
+        {% include {{include.figname}} %}
+  </div>
+  <div class="col-1-2">
+     <div class="comment">
+          <h2 class="commenttitle"> {{ include.title }}</h2>
+          {{ include.description | markdownify }}
+     </div>
+  </div>
+</div>
