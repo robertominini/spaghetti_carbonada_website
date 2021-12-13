@@ -43,7 +43,7 @@ We gathered those extraordinary events, feel free to explore them.
 
 Let's zoom into a particular example. On the calendar, we see that on the week of the 21 of March 2013, the Wikipedia article 'Chemical Weapon' has a high activity. It makes sense because on this date, there was an attack in Ghouta in Syria, during the civil war. It was the deadliest use of chemical weapon since the Iran-Iraq war. This event is about news in the world, and should be excluded from our study, because it is external to Snowden's revelations and causes an abnormal activity for the Wikipedia page. People wouldn't be chilled about getting informed on chemical weapons when this topic is at the center of every news. 
 
-{% include plotlytext.html figname="fig_chemical.html" title="The Syrian civil war" description="> Ghouta chemical attack happened on 21 August 2013. This important moment was noticed by the Google Trends by the unusual spike of ''chemical weapons'' keyword" %}
+{% include plotlytext.html figname="graph_trial.html" title="The Syrian civil war" description="> Ghouta chemical attack happened on 21 August 2013. This important moment was noticed by the Google Trends by the unusual spike of ''chemical weapons'' keyword" %}
 
 # Two cocktails from Ireland please !
 
