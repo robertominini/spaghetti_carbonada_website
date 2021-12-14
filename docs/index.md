@@ -113,7 +113,7 @@ Now, let's focus again on our primary goal. We want to remove all the external w
 {% include plotlytext.html figname="graph_trial.html" title="The chill unchanged" description="> After normalizing the outlier weeks caused by the external events, the trend of chilling effect is still reproducible" %}
 
 
-# Chilling through the times
+# Let's draw some conclusions
 
 Even without outliers from breaking news, the number of views after the revelations still decreases ! People are afraid to look for sensible subjects, by fear of the online surveillance ! This is quite interesting because it means that the revelations had an impact on the behaviour of Internet users. It means that people are not totally free to browse the Internet, get informed on some subject, because they know that there exists online surveillance. Be careful on what you do on the Internet, the government is watching you.
 
