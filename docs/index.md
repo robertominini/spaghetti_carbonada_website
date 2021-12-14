@@ -13,6 +13,8 @@ Today, our task is to investigate how people behaved after the events. We will n
 Let's dive into these datasets and find out **how** people actually behaved.
 
 
+{% include youtubePlayer.html id=etTypsl_yY0 %}
+
 # Let's start our investigation...
 
 With more than 18 billions of monthly pageviews, there are a lot of Wikipedia articles at our disposal. We need to focus on the ones that are actually meaningful in our investigation. So we have to ask ourselves a question : what articles might people be chilled to look up after such revelations ? Imagine yourself, in June 2013, thinking about all your past activities on the Internet, trying to remember what you looked up that could potentially raise a flag for the government. Imagine yourself, in June 2013, wondering how you will look up, for tomorrow's speech in your history class, informations that the government might classify as suspucious.  
