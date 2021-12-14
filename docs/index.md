@@ -64,7 +64,7 @@ Now, let's focus again on our primary goal. We want to remove all the external w
 # Now are we still chilling ?
  Recall the question we need to answer : from June 2013, is there a constant fear of the goverment spying among Internet users ? Let's see what the data in a world without big common events looks like. To do that we reproduce the same figure as the first one, but without all the external events that disrupt the general trend. Do we still have chilling effect ? The suspense is at its peak...
 
-{% include plotlytext.html figname="fig_final.html" title="The chill unchanged" description="> After normalizing the outlier weeks caused by the external events, the trend of chilling effect is still reproducible" %}
+{% include plotlytext.html figname="graph_trial.html" title="The chill unchanged" description="> After normalizing the outlier weeks caused by the external events, the trend of chilling effect is still reproducible" %}
 
 
 # Chilling through the times
