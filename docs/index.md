@@ -2,7 +2,7 @@
 layout: ada
 ---
 
-[![headlines.png](https://postimg.cc/dL9WhCRB)]
+[![headlines.png](https://postimg.cc/dL9WhCRB)](https://postimg.cc/dL9WhCRB)
 
 # About QuoteBank
 MISSING
