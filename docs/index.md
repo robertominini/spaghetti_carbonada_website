@@ -2,7 +2,8 @@
 layout: ada
 ---
 
-[![headlines.png](https://postimg.cc/dL9WhCRB)](https://postimg.cc/dL9WhCRB)
+
+[![ada-group-project-spaghetti-carbonada.png](https://i.postimg.cc/jdpBkQLG/ada-group-project-spaghetti-carbonada.png)](https://postimg.cc/dL9WhCRB)
 
 # About QuoteBank
 MISSING
