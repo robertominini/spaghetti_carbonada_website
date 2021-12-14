@@ -13,14 +13,14 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Online surveillance ? Just chill...
+title: Watch your words!
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Explore with us the impact of the revelations of NSA online surveillance from 2013. 
-  Government is watching you. Does it make you afraid to browse the Internet ?
+  Explore with us the differences in lexicon among the US politicians.
+  Lexicon is important. Do election winners have more sophisticated language?
 baseurl: "/ada-project-pages" # the subpath of your site, e.g. /blog
-url: "https://glorf.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  Glorf
+url: "https://robertominini.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+github_username:  robertominini
 
 # Build settings
 markdown: kramdown
