@@ -15,7 +15,7 @@ Let's dive into these datasets and find out **how** people actually behaved.
 
 {% include youtubePlayer.html id=etTypsl_yY0 %}
 
-[![Everything Is AWESOME](https://img.youtube.com/vi/StTqXEQ2l-Y/0.jpg)](https://www.youtube.com/watch?v=StTqXEQ2l-Y "Everything Is AWESOME")
+[![Everything Is AWESOME](https://img.youtube.com/vi/StTqXEQ2l-Y/0.jpg)](https://www.youtube.com/watch?v=StTqXEQ2l-Y)
 
 # Let's start our investigation...
 
