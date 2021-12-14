@@ -1,87 +1,52 @@
-# Chilling Effect Explained - Analyzing Other Causes of Wikipedia Views Changes in the Context of World Historical Events
+# Title: “Analyzing US Politicians Lexical Level” 
 
-## Abstract
+## Abstract:
+In recent years we often get the feeling that the level of the political debate has been quickly degrading. There seems to be a tendency, especially from populist candidates to propose extremely simplified solutions to complex problems. This is reflected in the ways politicians communicate with the public. Watching US presidential elections’ debates, as well as similar ones between Italian politicians, analysts noticed the significant difference in the complexity of the language used by the two sides. It’s often populist politicians using less refined language, very similar to spoken language, with a restricted use of vocabulary. The goal of this analysis is to apply an analytical methodology to this matter by scoring quotes by US politicians’ on a lexical diversity basis as well as complexity, using Flesch–Kincaid and MTLD measures. Finally we will compare aggregated scores by prominent figures of US politics and multiple sets of politicians grouped by affiliation, etc. 
 
-In the original *Chilling Effects* paper, the authors decided to remove *Hamas* from the set of analized topics, due to the ongoing conflict in the Middle East which was causing the values of average views per month to skyrocket. This action highlights two weaknesses of the author’s analysis. First, the average score might be dominated by the trends of a single, highly popular wikipedia page from the selected set. Second, there might be more highly significant historical events which affected the analysis by generating increased traffic to the pages related to the event.  
-In this work, we will make an effort to improve the analysis and address the aforementioned problems using the original data and the Google Trends from the related timespan. We will then reproduce the analysis on the new data to show whether the phenomenon described in the paper can be still observable with statistically significant confidence.
+## Motivation and data story:
+With this analysis we want to understand if there are significant differences in terms of complexity and refinement in the use of English by different groups of US politicians. Watching Trump’s presidential debates in 2016 and 2020 as well as a similar confrontation between two Italian politicians sparked various discussions regarding the lexical level of the people involved. Many analysts underlined to what extent speech complexity differs between candidates which are often referred-to as populists and more moderate ones. Linguists highlighted how basic the vocabulary and grammar structures used by Trump are.
+The goal of this analysis is to use the Quotebank database to extend this analysis of the linguistic level of specific individuals to a broader group of people, US politicians. We aim to use an analytical approach, in the pursuit to draw grounded conclusions on traits of the language used. The idea is to extract quotes attributed to US politicians and, after some data cleaning, measure lexical features of the quotes such as vocabulary amplitude and refinement, avg. sentence length and others to be combined inside readability scores. Plus, we could gather the most frequent words used by politicians and analyze to which context (formal or spoken language) they belong, using the COCA dataset to compute the relative frequency of each word in different contexts.  
+Finally, we want to present the findings, drawing interesting comparisons both between prominent individual politicians as well as relevant groups of Senators and Congressmen. We aim to present insights on the level of english of politicians grouped by party affiliation, electoral district or State, political post, schooling level and others. The question we are asking is then, are there significant differences between these groups. 
 
-## Research questions
+## Research questions:
+- Is there any significant difference in terms of language complexity and refinement between the last two presidential candidates, Trump and Biden?
+- What are their most used words? Do they use more words belonging to formal or spoken vocabulary?
+- Is it possible to spot similar differences between wider ranges of politicians? For example what can we say comparing Republicans and Democrats? We would like to create a clear map of the level of lexic used by politicians from various states or with different levels of experience, etc. 
 
-* How big is the importance of each separate article trend on the original paper results?
-* How important was the influence of the external events on the weekly wikipedia views?  
-External events are illustrated by huge spikes in the google trends dataset. To recognize them, we compute the derivative of the weekly interest score, and find the weeks where the derivative is more than the mean + 4 std. We choose this value, as this is the approximate height of the max peak of derivative in the only article, which the authors of the original dataset decided to treat as an outlier (hamas)
-* Is the original paper's result still relevant if we reduce the impact of "breaking news" and topic popularity disproportion in the original data, as such can the results be reproduced using a more general data set, such as Google Trends?  
-Google Trends is more sensitive to world events which is why it is interesting to use this dataset to detect any other outlier there could be - it might have been decisive, but not visible enough in the wikipedia data as we expect the breaking news to spike much higher than the related wikipedia articles  
-The only kind of outliers we'll consider are spikes caused by external events. We don't have any missing data in our dataset as we re-gathered the views for the missing months.
+## Additional datasets:
+- integrate Wikidata dumps, to select quotes from US politicians and filter them by groups.
+- We ideally would like to use Text Inspector APIs to analyze the quotes, these APIs use Carnegie Mellon dictionary to compute the Flesch-Kincaid Grade level, type/token ratio and other interesting metrics (we are waiting to be granted access to the API)
+- Corpus of Contemporary American English (COCA) from english-corpora.org to score words based on how likely they are to be used in a formal vs spoken context
 
-## Proposed dataset
+## Methods:
+- NLTK library’s tokenizer to clean quotes and prepare them to be scored.  
+- Text Inspector APIs to get measures of the language used.
+- Creation of additional metrics of polishness of language using the relative frequency of words in different contextes. 
+- Plotly to create interactive plots and maps.
 
-In addition to using the original wikipedia dataset provided by TA, (with re-downloaded two last months), we propose a set of Google Trends queries (Google Trends) to identify the trends of each of the 48 topics used in the original paper during the same timespan as the wikipedia views data.  
-Google Trends dataset is interesting because it uses a (random) sample of the queries in the google search bar, which is more general than just analysing the wikipedia views. So if there were a chilling effect, people would be chilled from searching a specific word, before even clicking on the wikipedia article. And generally, for events and news, people are looking things up in google, and only after click on the wikipedia article directly from the search engine. Google trends allows us to explore the magnitude of trends in searches, in a scale from 0 to 100. It illustrates the interest as a proportion of all searches on all topics on Google at that time and location (https://medium.com/google-news-lab/what-is-google-trends-data-and-what-does-it-mean-b48f07342ee8). It is easy to download the data we want with the button ‘Download’. We get a csv file with two columns : the week and the interest on the 0-100 scale from the wanted keyword. We would do that for all of our subjects.  
-Because the values provided by Google Trends are their own popularity metrics scaled from 0 to 100, we cannot use it easily for quantitative analysis. However, we can identify sharp spikes in interest which correspond to the news - eg. when querying for "terrorism", we can see a massive spike, 50 points higher from the second highest point, around a week of 14-20.04.2013. The query reveals that the spike is related to the Boston Marathon Bombing of 15.04.2013, an important event which could have affected the wikipedia views as well, and that was not counted as an outlier in the study. We can also plot the regression analysis and compare the results for the two datasets.
+## Proposed timeline:
+- First 2 weeks
+Load and clean data
+Integrate wiki-data, extract features for each author and create subsets of the dataset useful for following analysis.
+Apply NLTK or Text Inspector tools to tokenize the quotes
+Obtain Text Inspector’s APIs access and implement the methods to our dataset
+From each quote compute lexical complexity measures
+For each author aggregate quotes score and compute author’s scores.
+- Third week:
+Pairwise comparison of interest: filter prominent politicians, compare scores, collect most used words by each and analyse to which linguistic register they belong to (formal or spoken)
+Aggregate data over subgroups (see research questions)
+- Last 2 weeks:
+Create interactive visualizations 
+Create data story
+Draw conclusions
 
-## Methods
+## Organization within the team:
+We will be working in pairs splitting each of the 3 sections described in the timeline. 
+First 2 weeks: one group will focus on cleaning the data and integrate the additional datasets while the other two will focus on the implementation of external libraries, tokenize pipeline and APIs.
+Third week: One group will focus on additional metrics for the paiwise analyses, while the other will work to aggregate data for various subests.
+Last 2 weeks: one group will focus on creating interactive visualization of the data while the other will create and comment the data story. Final reviews will be made together.
 
-### A: Analyse Google Trends for the paper keywords
-
-1) Gather the data from Google Trends using google API, separately for every article in the 30 terrorism-related article set
-2) Identify the sharp spikes in the Google Trends data. 
-3) Use google search to recover the related  "disturbing" event from the world news. 
-4) Plot the original wikipedia views data topic-by-topic to identify their trends and compare them against the Google Trends data.  
-Our final analysis result will be the same regression analysis approach as used in the original paper. We'll then compare this result with the results of the authors, to see whether after our amendments the trend is still as clear as before.
-
-### B: First modified reproduction
-
-1) Try to deal with the problem of different topics having different numbers of views by re-scaling these numbers. See our first question for the TA’s about this.
-2) Try to treat the views data which was affected by "historical spike". Again we have some ideas on how to do that, see the questions’ section.
-
-### C: Second modified reproduction
-
-1) Plot the whole dataset once more and see whether the trend observed by the paper's authors is still visible.
-
-## Proposed timeline
-
-* 27.11 - 10.12 : Code  
-Data wrangling : 10%  
-Visualisation : 30%  
-Drawing conclusions and proving them statistically : 60%
-* 11.12 - 18.12 : report and video preparation
-
-## Organization within the team
-
-### 27.11 : preparation and upload of P4 notes
-
-* All the team
-
-### 30.11 : data acquisition scripts ready (start step A)
-
-* Elisa will write scraping script for all the 48 csv from Google Trends
-* Michał will prepare the data from Wikipedia
-* Eva will calculate statistics from the two datasets to put in our report
-
-### 05.12 : plots for each topic, discussion on findings (finish step A and start B)
-
-* Elisa will identify the spikes from the Google Trends dataset and search related breaking news
-* Michał will plot wikipedia data topic by topic against google trends data
-* Eva will normalize the data from wikipedia
-* All the team will discuss the results
-
-### 07.12 : treat outliers (finish step B)
-
-* All the team will discuss on how to treat outliers
-* One of them will do it
-* The other two will compute statistical tests in order to draw conclusions
-
-### 11.12 : code is ready with calculated stats, starting the report
-
-* Elisa will write : abstract, introduction, related work, (brief) data collection
-* Eva will write : dataset description with summary statistics, methods with math and description of main algorithms
-* Michał will write : results and findings, conclusions
-
-## Questions for TAs (it's clear now, thanks!)
-
-1) When we want to normalize wikipedia views for all articles, we thought of multiple ways to do it, and don’t know which one is the most relevant for this. We could normalize the views so that each article has the same importance over the whole time period. We could also do that for each day, we compute each fraction of the article views. Maybe we should try both and see what’s better?
-
-2) When we identify the outlier days, should we drop the topic as an outlier, or filling up the "historical" months data by arbitrary value ? (mean of neighbors? mean over all period without this date? mean of before june 2013 if the outlier is before or mean of after june 2013 if the outlier is after?). Also, we could of course try each possibility.
-
-3) We wonder whether calculating correlation between the two types of data seem reasonable. If yes, we wonder whether it'll be worthwhile to fit the lines of the google trends to the lines of the separate topic views to show the trends similarities and differences.
+## Questions for TAs:
+- How to deal with multiple QIDs? our apporach (remove those >3 homonyms and assume quotes from those with less are from the politician) is ok? what would you suggest? In the future we could try to integrate with the relevance of the web page and select the quote iff the relative relevance of the politician’s wiki page is high enough = low risk of an homonym being quoted.
+- are the research questions interesting enough? would you suggest any additional analysis?
+- How can we safely identify which is the last party among the list of parties in the speaker attributes dataset?
