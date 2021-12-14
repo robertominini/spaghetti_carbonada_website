@@ -10,6 +10,11 @@ MISSING
 
 # Framing our research
 
+<p align="center">
+  <img width="600" height="200" src="https://i.postimg.cc/JzRhLGmp/matteo-vs-matteo.png">
+</p>
+
+
 [![matteo-vs-matteo.png](https://i.postimg.cc/JzRhLGmp/matteo-vs-matteo.png)](https://postimg.cc/qzZrcBNK)
 
 In the new technology and social media era we are constantly exposed to politics, and thus political speech. One thing that’s easy to notice is that some politicians have a more refined speech than others. 
