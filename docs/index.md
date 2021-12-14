@@ -15,13 +15,7 @@ MISSING
 </p>
 
 
-<a href="https://developer.mozilla.org">
-  <img src="https://i.postimg.cc/JzRhLGmp/matteo-vs-matteo.png"
-       alt="Visit the MDN site">
-</a>
 
-
-[![matteo-vs-matteo.png](https://i.postimg.cc/JzRhLGmp/matteo-vs-matteo.png)](https://postimg.cc/qzZrcBNK)
 
 In the new technology and social media era we are constantly exposed to politics, and thus political speech. One thing that’s easy to notice is that some politicians have a more refined speech than others. 
 One very famous example of this phenomenon struck our attention some time ago in the quiet turbulent context of Italian politics: Porta a Porta, a very famous Italian talk show on politics, hosted a debate between politicians Matteo Renzi and Matteo Salvini. Soon after the beginning of the debate, viewers started noticing the stark difference in the way the politicians talked: Renzi used long sentences, used a varied lexicon while Salvini did the opposite: he used simpler words in a repetitive manner, keeping the phrases more simple than Renzi’s.
