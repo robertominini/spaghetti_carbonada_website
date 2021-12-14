@@ -11,7 +11,7 @@ MISSING
 # Framing our research
 
 <p align="center">
-  <img width="600" height="200" src="https://i.postimg.cc/JzRhLGmp/matteo-vs-matteo.png">
+  <img src="https://i.postimg.cc/JzRhLGmp/matteo-vs-matteo.png">
 </p>
 
 
