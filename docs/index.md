@@ -2,22 +2,55 @@
 layout: ada
 ---
 
-[![headlines.png](https://i.postimg.cc/66f5R0Wc/headlines.png)](https://postimg.cc/3WWTQ2D0)
+[![headlines.png](https://i.postimg.cc/66f5R0Wc/headlines.png)](https://postimg.cc/3WWTQ2D0) 
 
-# Snowden's revelations 
-
-In June 2013, Snowden reveals to the whole world shocking news about the U.S. government : the NSA is spying on the web traffic of the entire world ! This makes the headline of every newspaper in the world, everybody is talking about it. Everyone wonders how they should behave on the Internet, now that they know every one of their searches is being collected. 
-
-Today, our task is to investigate how people behaved after the events. We will need to figure out whether people were chilled from using the Internet the way they used to, or not. For that, we have at our disposal data from Wikipedia view counts and Google searches counts.
-
-Let's dive into these datasets and find out **how** people actually behaved.
+# About QuoteBank
+MISSING
 
 
+# Framing our research
 
+[![matteo-vs-matteo.png](https://i.postimg.cc/JzRhLGmp/matteo-vs-matteo.png)](https://postimg.cc/qzZrcBNK)
 
-[![Everything Is AWESOME](https://img.youtube.com/vi/StTqXEQ2l-Y/0.jpg)](https://www.youtube.com/watch?v=StTqXEQ2l-Y)
+In the new technology and social media era we are constantly exposed to politics, and thus political speech. One thing that’s easy to notice is that some politicians have a more refined speech than others. 
+One very famous example of this phenomenon struck our attention some time ago in the quiet turbulent context of Italian politics: Porta a Porta, a very famous Italian talk show on politics, hosted a debate between politicians Matteo Renzi and Matteo Salvini. Soon after the beginning of the debate, viewers started noticing the stark difference in the way the politicians talked: Renzi used long sentences, used a varied lexicon while Salvini did the opposite: he used simpler words in a repetitive manner, keeping the phrases more simple than Renzi’s.
+Renzi and Salvini are not alone, indeed we found that such differences can be found while considering many other politicians from the two sides of the political spectrum.
+
+[![trump-youtube.png](https://i.postimg.cc/GmFFmBZV/trump-youtube.png)](https://www.youtube.com/watch?v=phsU1vVHOQI)
+
+# What are we looking for? Research question
+
+Our supposition is that there is a difference in the linguistic usage between the two sides of the political spectrum. We suspect this difference to be found in the 
+
+number of different words while speaking (variety of lexicon)
+different length of phrases
+number of repetitions
+different structuring of the phrases (number of subordinate vs coordinate phrases)
+
+We plan to investigate whether this difference is present in the US political landscape. In other words, is the language that Republicans use much different than those that Democrats use. 
+
+# How do we measure?
+Metrics to be used
+MISSING
+
+## Examples of metrics
+TODO
+- Choose text of Trump
+- Choose text of Obama
+- Apply scripts
 
 # Let's start our investigation...
+
+ONE VS ONE COMPARISON
+
+CLOUDS OF WORDS
+
+FAMOUS POLITICIANS
+
+# Aggregate comparisons
+
+MAP, AGE, PARTY ...
+
 
 With more than 18 billions of monthly pageviews, there are a lot of Wikipedia articles at our disposal. We need to focus on the ones that are actually meaningful in our investigation. So we have to ask ourselves a question : what articles might people be chilled to look up after such revelations ? Imagine yourself, in June 2013, thinking about all your past activities on the Internet, trying to remember what you looked up that could potentially raise a flag for the government. Imagine yourself, in June 2013, wondering how you will look up, for tomorrow's speech in your history class, informations that the government might classify as suspucious.  
 
