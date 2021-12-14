@@ -12,10 +12,10 @@ MISSING
 
 
 <p align="center">
-	<a href="https://www.w3schools.com">
+	<a href="https://i.postimg.cc/JzRhLGmp/matteo-vs-matteo.png">
   		<img width="600" height="400" src="https://i.postimg.cc/JzRhLGmp/matteo-vs-matteo.png">
+	</a>
 </p>
-
 
 
 
@@ -23,7 +23,14 @@ In the new technology and social media era we are constantly exposed to politics
 One very famous example of this phenomenon struck our attention some time ago in the quiet turbulent context of Italian politics: Porta a Porta, a very famous Italian talk show on politics, hosted a debate between politicians Matteo Renzi and Matteo Salvini. Soon after the beginning of the debate, viewers started noticing the stark difference in the way the politicians talked: Renzi used long sentences, used a varied lexicon while Salvini did the opposite: he used simpler words in a repetitive manner, keeping the phrases more simple than Renzi’s.
 Renzi and Salvini are not alone, indeed we found that such differences can be found while considering many other politicians from the two sides of the political spectrum.
 
-[![trump-youtube.png](https://i.postimg.cc/GmFFmBZV/trump-youtube.png)](https://www.youtube.com/watch?v=phsU1vVHOQI)
+<!--- [![trump-youtube.png](https://i.postimg.cc/GmFFmBZV/trump-youtube.png)](https://www.youtube.com/watch?v=phsU1vVHOQI) -->
+
+<p align="center">
+	<a href="https://www.youtube.com/watch?v=phsU1vVHOQI">
+  		<img width="600" height="400" alt="trump-youtube" src="https://i.postimg.cc/GmFFmBZV/trump-youtube.png">
+	</a>
+</p>
+
 
 # What are we looking for? Research question
 
